@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container m-auto ">
+        <!--start-navbar-->
+        <nav class="flex items-center justify-between p-4 bg-neutral-50">
+          <img
+            src="images/logo-skincare.jpg"
+            alt="logo-skincare"
+            class="h-25 rounded-full"
+          />
+          <ul
+            class="flex justify-evenly items-center gap-8 text-lg font-medium text-gray-500"
+          >
+            <li>
+              <a
+                href="#"
+                class="hover:bg-pink-100 hover:text-neutral-500 p-3 rounded-md"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:bg-pink-100 hover:text-neutral-500 p-3 rounded-md"
+                >products</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:bg-pink-100 hover:text-neutral-500 p-3 rounded-md"
+                >contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:bg-pink-100 hover:text-neutral-500 p-3 rounded-md flex justify-center items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75"
+                  />
+                </svg>
+                login
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:bg-pink-100 hover:text-neutral-500 p-3 rounded-md flex justify-center items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 "
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+                cart</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!--end navbar-->
+        <!-- start Carousel-->
+         <div class="relative p-4 h-[700px] overflow-hidden rounded-xl shadow-lg">
+         <div  id="slider" class=" flex  transition-transform duration-500 ease-in-out ">
+            <img src="images/header2.png.jpg" alt="carousel1" class="w-full h-[700px]  flex-shrink-0  object-cover"/>
+            <img src="images/header3.png.jpg" alt="carousel1" class="w-full h-[700px]  flex-shrink-0 object-cover" />
+            <img src="images/header4.png.jpg" alt="carousel1" class="w-full h-[700px]  flex-shrink-0 object-cover" />
+            <img src="images/header5.png.jpg" alt="carousel1" class="w-full h-[700px]  flex-shrink-0 object-cover" />
+
+         </div>
+        <button class="absolute top-1/2 left-8 transform -translate-y-1/2 bg-white   text-gray-800 font-bold py-2 px-4 rounded-full" onclick="prevSlide()">
+            &#10094;
+         </button>
+         <button class="absolute top-1/2 right-8 transform -translate-y-1/2 bg-white  text-gray-800 font-bold py-2 px-4 rounded-full" onclick="nextSlide()">
+            &#10095;
+        </button>
+
+         </div>
+
+
+      </div>
+    </header>
+
+    <main>
+        <!--start-products-->
+        <section id="products" class=" p-4 m-4 text-center flex-column justify-center align-center">
+            <h2 class="text-4xl font-bold capitalize text-gray-500">Our Products</h2>
+            <div class="products-items flex justify-center align-center gap-5 m-6 flex-wrap  text-2xl font-meduim text-gray-500">
+                <a href="#">skin care</a>
+                <a href="#">Body Care</a>
+                <a href="#">Hair Care</a>
+                <a href="#">Korean </a>
+
+
+            </div>
+        
+        </section>
+        <!--end-products-->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
