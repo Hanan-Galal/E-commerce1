@@ -15,4 +15,3 @@ function prevSlide() {
     index = (index - 1 + sliders) % sliders;
     showSlide();
 }
-setInterval(showSlide(), 3000); // Change slide every 3 seconds
